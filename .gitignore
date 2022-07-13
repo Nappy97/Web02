@@ -1,0 +1,23 @@
+# Project exclude paths
+/JavaWork/Lec01_Hello/bin/
+/JavaWork/Lec02_FirstJava/bin/
+/JavaWork/Lec05_Operator/bin/
+/JavaWork/Lec06_If/bin/
+/JavaWork/Lec07_Switch/bin/
+/JavaWork/Lec08_For/bin/
+/JavaWork/Lec09_While/bin/
+/JavaWork/Lec10_Loop/bin/
+/JavaWork/Lec11_Array/bin/
+/JavaWork/Lec12_Method/bin/
+/JavaWork/Lec13_Class/bin/
+/JavaWork/Lec14_Access/bin/
+/JavaWork/Lec15_Inheritance/bin/
+/JavaWork/Lec16_OOP/bin/
+/JavaWork/Lec18_Exception/bin/
+/JavaWork/Lec21_Wrapper/bin/
+/JavaWork/Lec22_Collection/bin/
+/JavaWork/Lec23_InnerClass/bin/
+/JavaWork/Lec24_Lambda/bin/
+/JavaWork/Lec25_Thread/bin/
+/JavaWork/Lec26_FileIO/bin/
+/JavaWork/Lec31_Java_Util/bin/
