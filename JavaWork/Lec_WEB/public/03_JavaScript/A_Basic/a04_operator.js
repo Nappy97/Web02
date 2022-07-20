@@ -53,7 +53,7 @@ num3 = num4;
 num4 = temp;
 console.log('바꾼 후 num3 =', num3, 'num4 =', num4);
 
-// ES6 부터 등장한 비구조화 할당 구문을 사용하여
+// ES6 부터 등장한 비구조화 할당 구문을 사용하여 
 // 아래와 같이 편리하게 두개 변수값 서로 교환 가능
 // ※ 해당 단원에서 다시 다룰께요.
 [num3, num4] = [num4, num3];
@@ -62,16 +62,16 @@ console.log('바꾼 후 num3 =', num3, 'num4 =', num4);
 // 제곱연산자 (ES7 등장)
 console.log('-'.repeat(20));
 console.log('[제곱연산자]');
-
+ 
 console.log(2 ** 4);
 console.log((-3) ** 3);
 console.log(2 ** -1);
 console.log(2 ** (1/2));
 
 
-/*
+/* 
     복합대입연산자
-    +=, -=, *=, /=, %=, **=
+    +=, -=, *=, /=, %=, **=      
 
  */
 console.log('-'.repeat(20))
@@ -80,18 +80,18 @@ console.log('[복합 대입연산자]')
 // TODO
 
 
-/*
+/* 
     부호연산자(+, -) sign operator
         +: 부호 연산자(수의 부호(양,음)가 바뀌지 않음)
-        -: 부호 연산자(수의 부호(양,음)가 바뀜)
+        -: 부호 연산자(수의 부호(양,음)가 바뀜)  
 */
 // console.log('-'.repeat(20))
 // console.log('[부호연산자]')
 
 // TODO
 
-/*
-    증감연산자 increment/decrement operator :
+/* 
+    증감연산자 increment/decrement operator : 
     ++변수: 변수의 값을 1 증가시켜서 저장
     --변수: 변수의 값을 1 감소시켜서 저장
 
@@ -106,12 +106,12 @@ console.log('[복합 대입연산자]')
 // TODO
 
 
-/*
+/* 
     관계(비교) 연산자   Equality and Relational Operators
     비교 연산의 결과를 참(true) 또는 거짓(false)으로 리턴하는 연산자
     A < B: A는 B보다 작다
     A > B: A는 B보다 크다
-    A >= B: A는 B보다 크거나 같다
+    A >= B: A는 B보다 크거나 같다 
     A <= B: A는 B보다 작거나 같다
     A == B: A와 B가 같다.  ('값' 만 비교)
     A != B: A와 B는 다르다. ('값' 만 비교)

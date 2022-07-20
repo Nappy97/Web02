@@ -36,7 +36,7 @@ console.log(obj1);
 
 /* object 의 property 사용하기
     방법1 : objectName.propertyName
-    방법2 : objectName["propertyName"]
+    방법2 : objectName["propertyName"] 
 */
 console.log('-'.repeat(20));
 console.log('[object 의 property]');
@@ -134,13 +134,13 @@ console.log(obj3.fullName());
 
 // 위 코드 에서 this 는 obj3 를 참조한다.
 // 즉 this.firstName 은 obje.firstName 이 동작하는 것이다.
-
+ 
 // JavaScript 에서 this 는 '특정 object' 를 참조하게 되어 있다.
 // '어떤 object 를 참조?' 하냐는 this 가 사용(호출) 되는 시점마다 '다르다'.
 // (JS  위 this 가 다른 언어의 this에 비해 직관적으로 이해하기 어려운면이 있습니다)
 // 이후 진도 나가면서 this가 등장할때마다 this가 무엇을 참조하는지 눈여겨 봅시다.
 // 참고: https://www.w3schools.com/js/js_this.asp
-
+ 
 
 const x = {
     name: "kim",

@@ -28,17 +28,17 @@ console.log(`Hello, ${name}!`);
 
 const myObject = {name: "John", age: 40};
 console.log(myObject);
-// {key: 'value' } <-- console.log() 는 object '단독' 출력시 이쁘게 '출력'해준다
-//   절.대.로 toString() 의 결과값이 아닙니다.  (※ 파이썬의 __str__() 에 해당하는게 toString() )
+            // {key: 'value' } <-- console.log() 는 object '단독' 출력시 이쁘게 '출력'해준다
+            //   절.대.로 toString() 의 결과값이 아닙니다.  (※ 파이썬의 __str__() 에 해당하는게 toString() )
 
 console.log('myObject =', myObject);
 console.log('myObject = ' + myObject);
-// 문자열 연결연산(+)  => 'myObject = ' + myObject.toString()
+         // 문자열 연결연산(+)  => 'myObject = ' + myObject.toString()
 console.log(myObject.toString());
 
 console.log(`myObject = ${myObject}`);
-// template literal 도 내부적으로 문자열 연결연산(+)
-// => 'myObject = ' + myObject.toString()
+            // template literal 도 내부적으로 문자열 연결연산(+)  
+            // => 'myObject = ' + myObject.toString()
 
 
 console.log("\n[프로그램 종료]", '\n'.repeat(20));

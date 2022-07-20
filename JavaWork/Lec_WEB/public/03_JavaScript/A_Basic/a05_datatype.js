@@ -15,7 +15,7 @@
             Object : 객체
             (Array : 배열)
             Date
-            String
+            String 
             Number
             Boolean
 
@@ -23,7 +23,7 @@
             undefined : 타입이 지정되지 않음
             null : 데이터가 없는 object
 
-
+        
     JS 는 dynamic type 을 지원하는 언어다.
 */
 
@@ -39,7 +39,7 @@ console.log('x =', x, typeof(x));
 x = "John";
 console.log('x =', x, typeof(x));
 
-x = undefined;
+x = undefined; 
 console.log('x =', x, typeof(x));
 
 // JS 의 문자열 리터럴 은 홀따옴표 나 쌍따옴표로 감싼다
@@ -67,18 +67,18 @@ x = "10" + 10;  // string
 console.log('x =', x, typeof(x));
 x = "10" * 10;  // 100 (number) "10" -> 10 로 변환 ?? 잉?
 console.log('x =', x, typeof(x));
-x = "10" - 10;
+x = "10" - 10;  
 console.log('x =', x, typeof(x));
-x = "10" / 10;
+x = "10" / 10; 
 console.log('x =', x, typeof(x));
 
-x = "10" > 2;
+x = "10" > 2; 
 console.log('x =', x, typeof(x));
 
 console.log();
 
 x = "a" * 10;  // 에러 아니다!?  NaN : Not a Number
-console.log('x =', x, typeof(x));  // NaN number
+console.log('x =', x, typeof(x));  // NaN number 
 
 x = 10 / 0;
 console.log('x =', x, typeof(x));  // Infinity number
@@ -98,9 +98,9 @@ console.log('x =', x, typeof(x));
 
 /*
  * 배열 (array)
- *
+ * 
  * [ .. ]  bracket 으로 감싸고
- * 그 안에 배열 원소(item) 들이 콤마로 나열됨.
+ * 그 안에 배열 원소(item) 들이 콤마로 나열됨. 
  */
 console.log('-'.repeat(20));
 console.log('array (배열)');

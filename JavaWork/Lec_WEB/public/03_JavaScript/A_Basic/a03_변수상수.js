@@ -27,9 +27,9 @@
         - 대소문자 구분한다  (case sensitive)
         - 예약어 (reserved word), 키워드는 변수명으로 사용 불가
 
-
+    
     가급적 코드에서 사용하는 모든 변수들은 코드의 상단에서 선언해두자.
-*/
+*/     
 
 let num1;
 num1 = 20;
@@ -87,7 +87,7 @@ delete myValue;  // 전역변수 myValue 삭제
 * let, const 는 block scope (블럭 영역) 를 갖는 변수다
 *   블럭 안에서 선언된 변수는 선언이후 블럭안에서만 사용가능함
 *   블럭이 끝나면 해당 이름의 변수는 사용 불가
-*
+*  
 *   이러한 변수를 지역변수(local variable) 이라 하고
 *    local scope (지역 범위) 를 갖는다 라고 말합니다.
 *    scope 는 해당 이름을 사용할수 있는 범위

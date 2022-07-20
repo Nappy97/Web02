@@ -56,7 +56,7 @@
  */
 
 // 함수 정의
-function sayAnthem() {
+function sayAnthem(){
     console.log("동해물과 백두산이");
     console.log("마르고 닳도록");
     console.log("하느님이 보우하사");
@@ -71,7 +71,7 @@ sayAnthem();
 
 console.log(sayAnthem, typeof sayAnthem);
 
-function sayName(name) {
+function sayName(name){
     console.log('안녕하세요');
     console.log(`제 이름은 ${name} 입니다`);
 }
@@ -97,12 +97,12 @@ sayName("오정환", 25);
 /* ********************************************
  * return [값]
  *  -- 함수 종료
- *  -- 호출한 쪽으로 '값 하나' 을 돌려준다
+ *  -- 호출한 쪽으로 '값 하나' 을 돌려준다 
  */
 console.log('-'.repeat(20));
 console.log('[return]');
 
-function codeEveryday1() {
+function codeEveryday1(){
     console.log('웹개발 열공중');
     console.log('자바스크립트는');
     console.log('과연 쉬울까요?');
@@ -113,7 +113,7 @@ codeEveryday1();
 let ret_value = codeEveryday1();
 console.log(ret_value);
 
-function codeEveryday2() {
+function codeEveryday2(){
     console.log('웹개발 열공중');
     console.log('자바스크립트는');
     return;
@@ -128,7 +128,7 @@ console.log(codeEveryday2());
 console.log(sayAnthem.toString());
 
 // 일반적으로 JS 에선 아래와 같이 함수를 정의하곤 한다.
-const sayHello2 = function (name, age) {
+const sayHello2 = function(name, age){
     console.log('-'.repeat(20));
     sayName(name);
     console.log(`나이는 ${age} 살입니다`);
@@ -143,7 +143,7 @@ sayHello2('함수함수', 45);
 
 
 // 함수 정의와 동시에 호출
-(function () {
+(function(){
     console.log('hello function');
 })();
 
@@ -151,9 +151,10 @@ sayHello2('함수함수', 45);
     console.log(`${a} + ${b} = ${a + b}`);
 })(10, 13);
 
+
 // ----------------------------------------------------
 // 함수 정의 예
-//  입력: 두개의 수를 입력 받아서
+//  입력: 두개의 수를 입력 받아서 
 //  수행: 덧셈을 수행한뒤
 //  리턴: 덧셈 결과를 리턴
 
