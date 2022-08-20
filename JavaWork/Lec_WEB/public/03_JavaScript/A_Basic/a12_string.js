@@ -7,8 +7,8 @@
 let str, str1, str2, str3;
 
 /*******************************
- * 문자열 생성 
- * 
+ * 문자열 생성
+ *
  * 방법1. 문자열 리터럴.  "~" 혹은 '~' 으로 생성
  * 방법2. new String() 으로 정의 (비추)
  */
@@ -17,7 +17,8 @@ str = "Volvo";
 str = 'Volvo';
 
 str = "It's alright";
-str = 'He is called "Johnny"'; console.log(str);
+str = 'He is called "Johnny"';
+console.log(str);
 
 // new String() 
 str1 = "John";
@@ -34,7 +35,7 @@ lication";
 console.log(str);  // 그러나 위 방법 비추.
 
 str = "Hello Web App" +
-    "lication";  //  차라리 이 방법 ㅊㅊ
+    "lication";  //  차라리 이 방법 추천
 console.log(str);
 
 // .length
@@ -45,17 +46,17 @@ console.log(str.length);
 
 /******************************************
  * String 의 메소드들
- * 기본적으로 string 의 대부분의 메소드들은 immutable 하다. 
+ * 기본적으로 string 의 대부분의 메소드들은 immutable 하다.
  * 즉 원본을 변화시키기 않고, 새로운 string 을 만들어 리턴한다.
- * 
+ *
  * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4_%EB%A9%94%EC%84%9C%EB%93%9C
  */
-	
+
 /******************************************
  *  문자열 안에서 문자열 찾기
  *  indexOf(), lastIndexOf(), search()
  *    찾은 위치 인덱스 리턴, 못찾으면 -1 리턴
- * 
+ *
  *  includes() : 찾으면 true 리턴
  *  startsWith(searchValue, start) : 주어진 문자열로 시작하면 true 리턴
  *  endsWith(searchValue, length): 주어진 문자열로 끝나면 true 리턴
@@ -98,7 +99,7 @@ console.log("[문자열 추출 slice(), substring(), substr()]");
 str = "Apple, Banana, Kiwi";
 
 console.log(str.slice(7, 13));
-console.log(str.slice(-12, -6)); // 음수 인덱싱 가능
+console.log(str.slice(-12 - 6)); // 음수 인덱싱 가능, 역방향 순서명
 console.log(str.slice(7));   // 7부터 끝까지
 console.log(str.slice(-12));
 
@@ -118,7 +119,7 @@ str = "Please visit Japan!";
 console.log(str.replace("Japan", "Korea"));
 console.log(str.replace("JAPAN", "Korea"));
 console.log(str.replace(/JAPAN/i, "Korea")); // 정규표현식 대소문자 구분없이 치환
-            // i : case Insensitive 약자.
+// i : case Insensitive 약자.
 
 str = "Please visit Japan! Go Japan";
 console.log(str.replace("Japan", "Korea"));  // 기본적으로 첫번째 매칭만 치환
@@ -126,31 +127,31 @@ console.log(str.replace(/Japan/g, "Korea"));  // 정규표현식, g : global mat
 
 /*********************************
  * 대소문자 전환
- *  toUpperCase(), toLowerCase() 
+ *  toUpperCase(), toLowerCase()
  */
 console.log('-'.repeat(20));
 console.log("[대소문자 전환 toUpperCase(), toLowerCase()]");
 str = "Hello World!";
- 
+
 console.log(str.toUpperCase());
 console.log(str.toLowerCase());
 
 /*********************************
- * 문자열 연결 
+ * 문자열 연결
  *  concat()
  */
 console.log('-'.repeat(20));
 console.log("문자열 연결 concat()");
 str1 = "Hello";
 str2 = "World";
- 
+
 console.log(str1 + " " + str2);
 console.log(str1.concat(" ", str2));
 console.log("a".concat("b", "c", "d"));
 
 
 /**********************************
- * 좌우 공백 제거 
+ * 좌우 공백 제거
  *  trim()
  */
 console.log('-'.repeat(20));
@@ -195,7 +196,7 @@ console.log(num3.toFixed(2).toString().padStart(7, " "));
  * 문자 코드
  *  charAt(position)
  *  charCodeAt(position)
- *  Property access [ ] 
+ *  Property access [ ]
  */
 console.log('-'.repeat(20));
 console.log("[문자 코드 [ ], charAt(), charCodeAt()]");
@@ -242,7 +243,7 @@ str = "     Hello My     World    ";
 console.log(str.split(" "));
 
 console.log(str.trim().split(/\s+/));  // \s : 공백. 띄어쓰기, \n, \t, \r ...
-      // 단어별로 split 할때는 위와 같이 사용!
+// 단어별로 split 할때는 위와 같이 사용!
 
 arr = ["H", "e", "l", "l", "o"];  // array -> string
 console.log(arr.join("_"));

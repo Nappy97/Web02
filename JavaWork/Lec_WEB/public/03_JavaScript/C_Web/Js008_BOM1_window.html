@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>BOM - window </title>
+    <meta charset="UTF-8">
+    <title>BOM - window </title>
 </head>
 <!-- 
 BOM : Browser Object Model 
@@ -45,27 +45,48 @@ window
 
 <script>
 
-// TODO
+    // 전역변수 x
+    var x = 10;
+
+    function myFunc1(){
+        window.document.getElementById('result1').innerHTML =
+            `전역 x = ${window.x}, 전역 a = ${window.a}`
+    }
+
+    function myFunc2(){
+        x += 3;
+        document.getElementById('result2').innerHTML = x;
+    }
+
+    function myFunc3(){
+        a = 40;     // 키워드 없이 선언한 변수는 전역 변수가 된다.
+        document.getElementById('result3').innerHTML = a;
+    }
+
+    // function myFunc4(){
+    //     a += 20;
+    //     document.getElementById('result4').innerHTML = a;
+    // }
 
 </script>
 
 <body>
 <h2>window 객체</h2>
 <br>
-<button type="button" onclick="myFunc1();">전역 변수 x </button>
- : <span id="result1"></span><br><br>
-<button type="button" onclick="myFunc2();">전역 변수 x 3증가 </button>
- : <span id="result2"></span><br><br>
+<button type="button" onclick="myFunc1();">전역 변수 x</button>
+: <span id="result1"></span><br><br>
+<button type="button" onclick="myFunc2();">전역 변수 x 3증가</button>
+: <span id="result2"></span><br><br>
 <button type="button" onclick="myFunc3();">a = 40</button>
- : <span id="result3"></span><br><br>
-<button type="button" onclick="myFunc4();">a = a + 20 </button>
- : <span id="result4"></span><br><br>
+: <span id="result3"></span><br><br>
+<button type="button" onclick="myFunc4();">a = a + 20</button>
+: <span id="result4"></span><br><br>
 
 <hr>
 <script>
-//alert(), confirm(), prompt() 도 window 소속
+    //alert(), confirm(), prompt() 도 window 소속
 
-// TODO
+    // TODO
 
 </script>
 <input type="button" onclick="window.alert('alert함수도 window 소속')" value='alert() 함수'/><br><br>
@@ -82,12 +103,12 @@ window
 	요즘은 대부분의 브라우저가 팝업을 허용하지 않는 옵션이 켜져 있어서 특별한 경우 아니면 쓰진 않는것을 추천
  -->
 <script>
-function myFunc7(){
-	// open(url, 새창이름, 새창옵션);
-	// 리턴값도 window 객체
-	// TODO
-	
-}
+    function myFunc7() {
+        // open(url, 새창이름, 새창옵션);
+        // 리턴값도 window 객체
+        // TODO
+
+    }
 </script>
 <button type="button" onclick="myFunc7()">open()</button>
 <br><br>

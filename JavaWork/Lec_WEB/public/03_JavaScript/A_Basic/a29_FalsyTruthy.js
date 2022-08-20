@@ -11,8 +11,8 @@
     https://developer.mozilla.org/ko/docs/Glossary/Falsy
 
 */
-function print(data){
-    if(data) // 판정
+function print(data) {
+    if (data) // 판정
         console.log(data, '-- Truthy 판정');
     else
         console.log(data, '-- Falsy 판정');
@@ -40,8 +40,7 @@ let value = {a: 1};
 console.log(value ? true : false);
 
 // 2. !! 사용
-console.log(!!value); 
-
+console.log(!!value);
 
 
 console.log("\n[프로그램 종료]", '\n'.repeat(20));

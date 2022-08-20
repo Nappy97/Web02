@@ -55,7 +55,7 @@ console.log(num1 + "5");  // "NaN5"
 console.log(num1 * 10);
 
 
-/********************************** 
+/**********************************
  * 진법 리터럴
  *  0x 로 시작 16진법(hexadecimal)
  *  0 으로 시작 8진법 (octal)
@@ -63,7 +63,7 @@ console.log(num1 * 10);
  */
 console.log('-'.repeat(20))
 console.log('[진법리터럴, toString]');
- 
+
 num1 = 0xFF;  // 16진법
 num2 = 010;  // 8진법
 num3 = 0b10;  // 2진법
@@ -86,8 +86,8 @@ console.log(num1.toString(16));
 /*******************
  * 일반적으로 Number 는 숫자 literal 을 통해 생성되나,
  * object 로서 Number 를 생성할수 있다  (new 사용)  <-- 매우 비추함!  예측하지 못하는 동작과 성능 이슈
- *  
- */  
+ *
+ */
 console.log('-'.repeat(20));
 console.log('[Number() 로 생성하기]');
 
@@ -102,11 +102,11 @@ console.log(num2 === num3); // false ★ JS 에서 object 끼리의 비교결과
 
 
 /*********************************
- * Number 의 메소드(method) 들 
- */ 
+ * Number 의 메소드(method) 들
+ */
 console.log('-'.repeat(20));
 console.log('[Number 의 메소드들]');
- 
+
 
 // toFixed(n)
 //  소숫점 이하 n자리까지 표현한 '문자열' 결과  (이하 반올림)
@@ -140,11 +140,11 @@ console.log(num1.toPrecision(1));
 
 /****************************************
  * number 로 변환하는 방법 3가지
- * 
+ *
  *  Number() 함수
  *  parseInt()
  *  parseFloat()
- * 
+ *
  *  다양한 경우에서 사용자가 입력한 값은 문자열(string) 타입으로 입력된다
  * 이의 산술연산을 하거나 Number 메소드를 적용하려면 number로 변환해야 한다
  */
@@ -171,14 +171,14 @@ console.log(Number("10,33"));
 console.log(Number("10 33"));
 
 // Date 객체도 Number() 사용하여 number 변환
-console.log(new Date()); 
+console.log(new Date());
 console.log(Number(new Date()));  // 1970.1.1 이후 경과된 ms 
 
 
-/***********************************  
+/***********************************
  * Number 의 property
  *   https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number#static_properties
- * 
+ *
  * Number 의 static 메소드
  *   https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number#%EC%A0%95%EC%A0%81_%EB%A9%94%EC%86%8C%EB%93%9C
  */
@@ -198,7 +198,6 @@ console.log(Number.isInteger(3.1));
 // Number 값의 범위
 console.log(Number.MAX_VALUE);
 console.log(Number.MIN_VALUE);
-
 
 
 console.log("\n[프로그램 종료]", '\n'.repeat(20));

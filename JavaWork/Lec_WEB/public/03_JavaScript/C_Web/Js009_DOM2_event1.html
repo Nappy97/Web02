@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>DOM eventListener</title>
+    <meta charset="UTF-8">
+    <title>DOM eventListener</title>
 </head>
 <style>
-div#demo {
-	width:200px;
-	height:200px;
-	background-color: yellow;
-	text-align: center;
-	
-}
+    div#demo {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        text-align: center;
+
+    }
 </style>
 <body>
 <!-- 
@@ -39,17 +39,49 @@ DOM event 객체
 
 ※ 크롬 개발자 도구에서 EventListener 확인 가능	
 -->
-<div id="demo">이벤트 없어요</div><br>
+<div id="demo">이벤트 없어요</div>
+<br>
 <button id="add_event">이벤트 추가</button>
 <button id="remove_event">이벤트 삭제</button>
 <p id="event"></p>
 
 <script>
-var demoBox = document.getElementById("demo");
-var addButton = document.getElementById("add_event"); 
-var removeButton = document.getElementById("remove_event");
+    var demoBox = document.getElementById("demo");
+    var addButton = document.getElementById("add_event");
+    var removeButton = document.getElementById("remove_event");
 
-// TODO
+    function clickHandler(){
+        document.getElementById('event').innerHTML = event.type + " " + event.target;
+
+        let bgcolor = demoBox.style.background;
+        if (bgcolor != 'greenyellow')
+            demoBox.style.background = 'greenyellow';
+        else
+            demoBox.style.background = 'yellow';
+    }
+
+    function mouseOverHandler(){
+        document.getElementById('event').innerHTML = event.type + " " + event.target;
+        demoBox.style.outline = "3px solid red";
+    }
+    addButton.addEventListener("click", function (){
+        demoBox.addEventListener("click", clickHandler);
+        demoBox.innerHTML = "클릭해보세요~";
+
+        demoBox.onmouseover = mouseOverHandler;
+        demoBox.onmouseout = function (event){
+            document.getElementById('event').innerHTML = event.type + " " + event.target;
+            demoBox.style.outline = "";     // 스타일 속성 삭제, undefined 안됨.
+        }
+    });
+
+    removeButton.addEventListener("click", function (){
+        demoBox.removeEventListener("click", clickHandler)
+        demoBox.innerHTML = "no event";
+
+        demoBox.onmouseover = undefined;
+        demoBox.onmouseout = undefined;
+    })
 
 </script>
 
@@ -58,7 +90,7 @@ var removeButton = document.getElementById("remove_event");
 
 <script>
 
-// TODO
+    // TODO
 
 </script>
 

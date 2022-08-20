@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>AJAX</title>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
 </head>
 <!--
 	■ 동기화 (Synchronous) 방식
@@ -62,24 +62,40 @@
 	  참조 : https://developer.mozilla.org/ko/docs/Web/HTTP/CORS
 	  
   ※ IE 및 이클립스 내장 브라우저에서는 동일출처정책을 까다롭게 적용안하므로 문제 없이 예제 동작함.
--->  
+-->
 <body>
 
 <div id="demo">
-<h2>AJAX XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Change Content</button>
+    <h2>AJAX XMLHttpRequest</h2>
+    <button type="button" onclick="loadDoc()">Change Content</button>
 </div>
 <hr>
 <p id="info"></p>
 
 <script>
-var info = document.getElementById('info');
-var infoTxt = "JS/ajax_info.txt";
-function loadDoc() {
+    var info = document.getElementById('info');
+    var infoTxt = "JS/ajax_info.txt";
 
-	// TODO
+    function loadDoc() {
 
-}
+        info.innerHTML = "";
+
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            // readyState 변경 상태 확인
+            info.innerHTML = `readyState 변경 -> ${this.readyState}<br>${info.innerHTML}`;
+
+            if (this.readyState == 4 && this.status == 200){    // 진동벨
+                // response 가 정상적으로 도착하면 수행할 코드 자성.
+                document.getElementById('demo').innerHTML = this.responseText;
+            }
+        };
+
+        xhttp.open("GET", infoTxt, true);
+        xhttp.send();
+    }
+
+
 </script>
 <!-- 
 XMLHttpRequest object 의 메소드들

@@ -111,7 +111,7 @@ console.log(arr2.length, [].length);
  * 
  *  shift, unshift 는 pop, push 보다 성능이 느리다!
  */
-console.log('-'.repeat())
+console.log('-'.repeat(20))
 console.log("[push() pop() shift() unshift()]");
 console.log(fruits);
 

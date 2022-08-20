@@ -106,7 +106,7 @@ function codeEveryday1(){
     console.log('웹개발 열공중');
     console.log('자바스크립트는');
     console.log('과연 쉬울까요?');
-    return;
+    return; // 필수 요소는 아님
 }
 
 codeEveryday1();
@@ -117,7 +117,7 @@ function codeEveryday2(){
     console.log('웹개발 열공중');
     console.log('자바스크립트는');
     return;
-    console.log('과연 쉬울까요?');
+    console.log('과연 쉬울까요?');    // 실행 안됨
 }
 
 console.log(codeEveryday2());

@@ -34,7 +34,7 @@ header {
     padding: 0;
 }
 
-nav#top_menu {
+nav#subtitle {
     /* outline: violet 1px solid; */
 
     width: 600px;
@@ -42,7 +42,7 @@ nav#top_menu {
     margin: 50px 20px 0 0;
 }
 
-nav#top_menu ul {
+nav#subtitle ul {
     list-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
@@ -50,12 +50,12 @@ nav#top_menu ul {
     color: #333;
 }
 
-nav#top_menu ul li {
+nav#subtitle ul li {
     float: left;
     margin: 0 5px;
 }
 
-nav#top_menu a {
+nav#subtitle a {
     text-decoration: none;
     color: #333;
     height: 20px;
@@ -63,7 +63,7 @@ nav#top_menu a {
     padding: 10px;
 }
 
-nav#top_menu a:hover {
+nav#subtitle a:hover {
     background-image: url(../images/blue.gif);
     background-repeat: repeat-x;
     background-position: bottom;
